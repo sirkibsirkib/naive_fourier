@@ -21,9 +21,6 @@ pub fn fourier(samples: &[f32], sample_period: f32, query_frequency: f32) -> f32
         / samples.len() as f32
 }
 
-
-
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -48,7 +45,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let function = |x: f32| (x * 2.0).sin() + ((x + 1.0) * 5.0).sin() ;
+        let function = |x: f32| (x * 2.0).sin() + ((x + 1.0) * 5.0).sin();
 
         let len = 20.0;
         let num_samples = 1200;
